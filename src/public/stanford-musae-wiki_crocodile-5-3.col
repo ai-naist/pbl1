@@ -1,0 +1,9 @@
+c musae-wiki:crocodile: The data was collected from the English Wikipedia (December 2018). https://snap.stanford.edu/data/wikipedia-article-networks.html
+p edge 6 5
+e 1 6
+e 2 6
+e 3 6
+e 4 6
+e 5 6
+l 3
+t 1 2

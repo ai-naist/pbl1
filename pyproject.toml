@@ -1,0 +1,29 @@
+[project]
+name = "pbl1"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "akihiro-i", email = "inoue.akihiro.ib5@naist.ac.jp" }
+]
+dependencies = [
+    "networkx>=3.3",
+    "matplotlib>=3.9.2",
+    "numpy>=2.1.0",
+    "graphillion>=1.8",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pbl1"]
