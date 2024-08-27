@@ -134,7 +134,7 @@ if __name__ == "__main__":
     dir = sorted(os.listdir("public"))
     success = {}
     for f_num, file in enumerate(dir):
-        if f_num != 18:  # -38,-39,+37,-20,-19,-17,-16,+10,9,-7
+        if f_num != 7:  # -38,-39,+37,-20,-19,-17,-16,+10,9,-7
             continue
         start_time = time.time()
         if file.endswith(".col"):
@@ -167,4 +167,6 @@ if __name__ == "__main__":
             #     node_color="white",
             # )
             # plt.show()
-    print(len(success), success)
+    print(f"solved:{len(success)}")
+    for case in success:
+        print(f"{case}  {success[case]:.6f}s")
