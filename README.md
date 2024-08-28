@@ -37,7 +37,7 @@ rye sync
 
 
 # モニタリング
-vmstat
+top
 ps aux | grep python
 
 ```
